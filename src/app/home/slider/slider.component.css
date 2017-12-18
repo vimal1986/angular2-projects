@@ -1,0 +1,16 @@
+#HomeSlider .carousel-control {
+    width: 3%;
+    color: #fff;
+    text-shadow: none;
+    background-color: black;
+    opacity: 0.5;
+    height: 100px;
+    top: 42%;
+}
+#HomeSlider .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+    margin-top: -18px;
+}
+#HomeSlider img {
+    width:100%;
+    max-height: 600px;
+}

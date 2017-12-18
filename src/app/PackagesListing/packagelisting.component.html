@@ -1,0 +1,25 @@
+<section class="pack-listing">
+  <div class="pack-width">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4" *ngFor="let package of packagelist">
+          <div class="single-pack">
+            <img src={{package.package_thumb_image}}/>
+            <div class="ribbon popular"><span>20% Off</span></div>
+            <div class="showtime-banner">3 Nights / 4 Days</div>
+            <div class="info-details">
+              <h3>{{package.package_name}}</h3>
+              <p>Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline</p>
+              <p>
+                <del><i class="fa fa-usd" aria-hidden="true"></i> 66,666 </del><span class=""><i class="fa fa-usd" aria-hidden="true"></i> {{package.price}}</span>
+                <a routerLink="/packagedetails/{{package.id}}" class="btn btn-details pull-right">View Details</a>
+              </p>
+            </div>
+          </div>
+        </div>
+       
+        
+      </div>
+    </div>
+  </div>
+</section>

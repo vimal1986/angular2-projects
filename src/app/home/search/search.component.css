@@ -1,0 +1,58 @@
+.search-bar {
+    background: #2dc3c4;
+    padding: 50px 0;
+}
+.search-bar h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 40px;
+    text-shadow: 1px 6px 1px #206b6c;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+}
+.search-bar .form-group {
+    position: relative;
+}
+.search-bar .form-control {
+    height: 42px;
+    padding: 6px 12px;
+    color: #9f9f9f;
+    background-image: none;
+    border: 1px solid #2dc3c4;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
+}
+.from-after:after {
+    content: "\F041";
+    font-family: FontAwesome;
+    color: #2dc3c4;
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    font-size: 25px;
+}
+.calander-after:after {
+    content: "\f073";
+    font-family: FontAwesome;
+    color: #2dc3c4;
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    font-size: 25px;
+}
+.search-bar .form-inline .form-group {
+    margin-right: 15px;
+}
+.btn-search, .btn-search:hover, .btn-search:focus {
+    background: #024c4d;
+    color: #fff;
+    border-color: #024c4d;
+    border-radius: 0;
+    padding: 7px 20px;
+    font-size: 18px;
+}
+.yellow{
+    color:#fef500;
+}

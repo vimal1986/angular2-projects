@@ -1,0 +1,53 @@
+<section class="main-register">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="register">
+          <form [formGroup]="regForm" (ngSubmit)="onRegSubmit(regForm.value)" action="">
+
+            <div class="form-group">
+              <label for="fname">First Name:</label>
+              <input type="text" [formControl]="regForm.controls['first_name']" class="form-control" id="fname">
+              <span class="text-danger" *ngIf="regForm.controls['first_name'].touched && !regForm.controls['first_name'].valid">Not Valid</span>
+            </div>
+
+            <div class="form-group">
+              <label for="lname" >Last Name:</label>
+              <input type="text" [formControl]="regForm.controls['last_name']" class="form-control" id="lname">
+              <span class="text-danger" *ngIf="regForm.controls['last_name'].touched && !regForm.controls['last_name'].valid">Not Valid</span>
+
+            </div>
+
+            <div class="form-group">
+              <label for="mobile">Mobile Number:</label>
+              <input type="text"   [formControl]="regForm.controls['mobile']"  class="form-control" id="mobile">
+              <span class="text-danger" *ngIf="regForm.controls['mobile'].touched && !regForm.controls['mobile'].valid">Not Valid</span>
+
+            </div>
+
+            <div class="form-group">
+              <label for="email"> Email ID:</label>
+              <input type="email"   [formControl]="regForm.controls['email']" class="form-control" id="email">
+              <span class="text-danger" *ngIf="regForm.controls['email'].touched && !regForm.controls['email'].valid">Not Valid Email</span>
+            </div>
+
+            <div class="form-group">
+              <label for="pwd"> Password:</label>
+              <input type="password"  [formControl]="regForm.controls['password']" class="form-control" id="pwd">
+              <span class="text-danger" *ngIf="regForm.controls['password'].touched && !regForm.controls['password'].valid">Not Valid</span>
+            </div>
+
+            <div class="form-group">
+              <label for="cpwd">Confirm Password:</label>
+              <input type="password"  [formControl]="regForm.controls['password_confirmation']"  class="form-control" id="cpwd">
+              <span class="text-danger" *ngIf="regForm.controls['password_confirmation'].touched && !regForm.controls['password_confirmation'].valid">Not Valid</span>
+            </div>
+
+            <button type="submit" [disabled]="!regForm.valid" class="btn btn-success pull-right">Submit</button>
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,50 @@
+.board-members {
+    padding: 50px 0;
+}
+.board-members h3{
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+.board-members h5 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #a3a3a3;
+    margin-bottom: 30px;
+}
+
+.single-member {
+    background: #037374;
+    border-radius: 4px;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.single-member img {
+    float: left;
+    margin-right: 15px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.single-member h4 {
+    margin-top: 0;
+    font-size: 20px;
+    color:#fff;
+
+}
+.single-member p {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #fff;
+}
+.board-mem  {
+    width: 80%;
+    margin: auto;
+}
+.single-member .fa {
+    margin-right: 5px;
+}
+
+
+

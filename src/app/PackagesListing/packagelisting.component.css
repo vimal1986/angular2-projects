@@ -1,0 +1,109 @@
+.single-pack {
+    box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    position: relative;
+    margin: 6px 14px;
+    margin-bottom: 25px;
+}
+.single-pack img {
+    border-radius: 4px 4px 0px 0;
+    max-height: 254px;
+    min-height: 254px;
+    width: 100%;
+}
+.info-details {
+    padding: 14px 15px;
+}
+.info-details h3 {
+    margin-top: 0;
+}
+.info-details p {
+    text-align: justify;
+}
+.pack-listing {
+    padding: 30px 0;
+}
+.showtime-banner:after {
+    border-color: #a01d26 #a01d26 #a01d26 transparent;
+    border-style: solid;
+    border-width: 16px;
+    content: " ";
+    height: 0;
+    position: absolute;
+    right: 100%;
+    width: 0;
+    top: 0px;
+}
+.showtime-banner {
+    background: #a01d26;
+    color: #fff;
+    height: 32px;
+    margin: 0;
+    padding: 6px 6px 0 0px;
+    position: absolute;
+    z-index: 4;
+    left: 14px;
+    bottom: 43%;
+}
+.ribbon {
+    position: absolute;
+    right: -1px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 103px;
+    height: 103px;
+    text-align: right;
+}
+.ribbon span::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #8F0808;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F0808;
+}
+.ribbon.popular span::after {
+    border-right-color: #a01d26;
+    border-top-color: #a01d26;
+}
+.ribbon.popular span {
+    background: linear-gradient(#a01d26 0%, #75050c 100%);
+}
+.ribbon span {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    transform: rotate(45deg);
+    width: 120px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#F70505 0%, #8F0808 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 26px;
+    right: -24px;
+}
+.btn-details, .btn-details:hover, .btn-details:focus {
+    background: #a01d26;
+    color:#fff;
+    border-color:#a01d26;
+}
+.pack-width {
+    width: 80%;
+    margin: auto;
+}
+.info-details p del {
+    color: red;
+    margin-right: 12px;
+    font-size: 13px;
+}
+.info-details p span {
+    font-size: 18px;
+}

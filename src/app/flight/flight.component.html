@@ -1,0 +1,25 @@
+<!-- <p>
+  flight works!
+</p> -->
+<script src="../app.component.ts"></script>
+<div class="container">
+  <div class="row">
+      <div class="col-*-*">
+<p>Book Domestic and International flights</p>
+  <button class="btn btn-default btn-circle active">One way</button>
+<button class="btn btn-default  btn-circle">Round Trip</button>
+  <button class="btn btn-default btn-circle">MultiCity</button>
+  </div>
+</div>
+<br>
+<br>
+<label>From</label>
+<br>
+<input type="text" name="From">
+
+</div>
+
+<div *ngFor="let pack of packagelist">
+    <img src="{{pack.package_thumb_image}}">
+    <h1>{{pack.package_name}}</h1>
+</div>
